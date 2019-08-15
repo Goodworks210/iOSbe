@@ -4,25 +4,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Api extends CI_Controller {
 
-   public function __construct() {
-        parent::__construct();
-        // Default load class
-        // Response heade content type set from text/HTML to application/json
-        header('Content-type: application/json');
-        date_default_timezone_set("GMT");
-        // Load modal class
-        $this->load->model('m_api');
-         // Load validation class
-        $this->load->library('validation');
- 
-    }
+      public function __construct() {
+            parent::__construct();
+            // Default load class
+            // Response heade content type set from text/HTML to application/json
+            header('Content-type: application/json');
+            date_default_timezone_set("GMT");
+            // Load modal class
+            $this->load->model('m_api');
+            // Load validation class
+            $this->load->library('validation');
 
-  public function index()
-  {
-        // Intial testing function for controller
-    echo json_encode("API controller is working fine");
+      }
 
-  }
+      public function index() {
+            // Intial testing function for controller
+      echo json_encode("API controller is working fine");
+
+      }
 
        function email_configration() {
         $email = "support@s166-62-92-171.secureserver.net";

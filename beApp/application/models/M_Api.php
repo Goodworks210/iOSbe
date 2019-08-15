@@ -1,5 +1,5 @@
 <?php
-class M_Api extends CI_Model {
+class M_api extends CI_Model {
 
 
     function expertise_list(){
